@@ -2,7 +2,7 @@ batch_size: 64                          # batch size
 warm_up: 10                             # warm-up epochs
 epochs: 50                             # total number of epochs
 
-load_graph_model: pretrained_gin        # resume training
+load_graph_model: pretrained_gcn        # resume training
 save_every_n_epochs: 10                  # automatic model saving frequecy
 
 fp16_precision: False                   # float precision 16 (i.e. True/False)
@@ -21,7 +21,7 @@ roberta_model:
   type_vocab_size: 1
 
 
-graph_model_type: gin                   # GNN backbone (i.e., gin/gcn)
+graph_model_type: gcn                   # GNN backbone (i.e., gin/gcn)
 graph_model: 
   num_layer: 5                          # number of graph conv layers
   emb_dim: 500                          # embedding dimension in graph conv layers
